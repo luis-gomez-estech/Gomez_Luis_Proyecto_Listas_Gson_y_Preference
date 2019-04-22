@@ -22,7 +22,8 @@ public class Sitios {
         return sitiosArray;
     }
 
-    // Me faltaba este constructor para que funcione preferences
+
+    // He añadido este constructor para que funcione preferences, pero sigue sin funcionar
 
     public Sitios(ArrayList<Sitio> sitiosArray) {
         this.sitiosArray = sitiosArray;

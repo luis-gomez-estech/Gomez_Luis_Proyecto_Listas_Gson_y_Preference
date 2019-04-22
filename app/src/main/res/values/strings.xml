@@ -8,4 +8,5 @@
     <string name="ir_a_añadir_sitios">Ir a añadir sitios</string>
     <string name="introduce_un_sitio_nuevo">Introduce un sitio nuevo:</string>
     <string name="textview">textview</string>
+    <string name="to_json">To JSON</string>
 </resources>
