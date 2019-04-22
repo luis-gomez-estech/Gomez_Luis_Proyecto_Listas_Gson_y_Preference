@@ -3,7 +3,6 @@ package com.example.ejerciciolistas1;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -11,12 +10,6 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.TextView;
-
-
-
-
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -53,11 +46,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Creo el array referido a la class Sitios
 
-        sitiosArray= new Sitios();
-
-        //sitiosArray.addSitio(new Sitio("París"));
 
         // Añadimos un SharedPreferences, le ponemos un nombre por ejm: (prefs) y en name lo mismo
 
@@ -67,9 +56,15 @@ public class MainActivity extends AppCompatActivity {
 
        //sitiosArray  = new Sitios(sitiosArray.fromJSON(name).getSitiosArray());
 
+        sitiosArray = new Sitios();
+
+        // Creo el array referido a la class Sitios
+
+        //sitiosArray.addSitio(new Sitio("París"));
 
         // A la lista declarada le digo su id
         milista= findViewById(R.id.lista_final);
+
 
         // Ahora al adaptador le decimos que obtenga los valores del arrayList que esta en la class Sitios
 
@@ -122,7 +117,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(intent, 2);
             }
         });
-
 
 
 

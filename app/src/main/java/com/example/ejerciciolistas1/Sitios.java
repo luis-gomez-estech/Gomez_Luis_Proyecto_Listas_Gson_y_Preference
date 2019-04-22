@@ -21,6 +21,8 @@ public class Sitios {
         return sitiosArray;
     }
     // creamos el metodo toJSON para que cree el json
+
+
     public String toJSON(){
         Gson gson = new Gson();
         String json = gson.toJson(this);

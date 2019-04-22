@@ -8,26 +8,6 @@
         android:background="#4CAF50"
         >
 
-
-
-    <TextView
-        android:id="@+id/titulo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:gravity="center"
-        android:text="@string/listado_de_sitios"
-        android:textSize="24sp"/>
-
-
-    <ListView
-        android:id="@+id/lista_final"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        />
-
-
     <Button
         android:id="@+id/boton_ir_añadir"
         android:layout_width="match_parent"
@@ -50,6 +30,23 @@
         android:layout_marginEnd="20dp"
         android:text="To JSON"/>
 
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:text="@string/listado_de_sitios"
+        android:textSize="24sp"/>
+
+
+    <ListView
+        android:id="@+id/lista_final"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
 
 </LinearLayout>
 
