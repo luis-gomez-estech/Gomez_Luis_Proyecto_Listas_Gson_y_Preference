@@ -11,17 +11,25 @@ public class Sitios {
     // el array se va a llamar sitiosArray y creamos en esta clase el arrayList e implantamos Gson para guardar un json con el arraylist en forma de String
     // Para usar Gson hay que implementarlo en el gradle con, implementation 'com.google.code.gson:gson:2.8.5'
 
-    private ArrayList<Sitio> sitiosArray;
+    public ArrayList<Sitio> sitiosArray;
 
     public Sitios() {
         this.sitiosArray = new ArrayList<>();
     }
 
+
     public ArrayList<Sitio> getSitiosArray() {
         return sitiosArray;
     }
-    // creamos el metodo toJSON para que cree el json
 
+    // Me faltaba este constructor para que funcione preferences
+
+    public Sitios(ArrayList<Sitio> sitiosArray) {
+        this.sitiosArray = sitiosArray;
+    }
+
+
+    // creamos el metodo toJSON para que cree el json
 
     public String toJSON(){
         Gson gson = new Gson();

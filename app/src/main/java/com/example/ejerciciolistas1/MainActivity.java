@@ -46,25 +46,26 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
         // Añadimos un SharedPreferences, le ponemos un nombre por ejm: (prefs) y en name lo mismo
 
         final SharedPreferences prefs = getSharedPreferences("MyPreferences", Context.MODE_PRIVATE);
 
         String name = prefs.getString("names","Name");
 
-       //sitiosArray  = new Sitios(sitiosArray.fromJSON(name).getSitiosArray());
+        // Creo el array referido a la class Sitios
 
         sitiosArray = new Sitios();
-
-        // Creo el array referido a la class Sitios
 
         //sitiosArray.addSitio(new Sitio("París"));
 
         // A la lista declarada le digo su id
         milista= findViewById(R.id.lista_final);
 
+        if (!name.equals("Name")){
+            sitiosArray  = new Sitios(sitiosArray.fromJSON(name).getSitiosArray());
+        }
+
+       // sitiosArray  = new Sitios(sitiosArray.fromJSON(name).getSitiosArray());
 
         // Ahora al adaptador le decimos que obtenga los valores del arrayList que esta en la class Sitios
 
