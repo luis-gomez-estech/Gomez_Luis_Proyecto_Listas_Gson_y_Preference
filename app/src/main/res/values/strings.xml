@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Ejercicio listas 1</string>
+    <string name="confirm_message">Estas seguro que quieres borrar</string>
+    <string name="confirm">Confirmar</string>
+    <string name="remove">Borrar</string>
+    <string name="listado_de_sitios">Listado de sitios</string>
+    <string name="añadir_sitio">Añadir sitio</string>
+    <string name="ir_a_añadir_sitios">Ir a añadir sitios</string>
+    <string name="introduce_un_sitio_nuevo">Introduce un sitio nuevo:</string>
+    <string name="textview">textview</string>
+</resources>
