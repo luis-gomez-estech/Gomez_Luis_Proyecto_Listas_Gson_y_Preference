@@ -8,7 +8,7 @@ public class Sitios {
 
     // Por un lado, en este proyecto teniamos creado en el MainActivity un arrayList
     // llamado sitios, pero como ahora voy a crear esta class llamada Sitios, pues para no confundirla,
-    // el array se va a llamar sitiosArray y creamos en esta clase el arrayList e implantamos Gson para guardar un json con el arraylist en forma de String
+    // el array se va a llamar sitiosGuardados y creamos en esta clase el arrayList e implantamos Gson para guardar un json con el arraylist en forma de String
     // Para usar Gson hay que implementarlo en el gradle con, implementation 'com.google.code.gson:gson:2.8.5'
 
     public ArrayList<Sitio> sitiosArray;
@@ -57,7 +57,7 @@ public class Sitios {
     @Override
     public String toString() {
         return "Sitios{" +
-                "sitiosArray=" + sitiosArray +
+                "sitiosGuardados=" + sitiosArray +
                 '}';
     }
 }

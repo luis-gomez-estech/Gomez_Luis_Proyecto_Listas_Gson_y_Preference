@@ -19,9 +19,9 @@ import java.util.ArrayList;
 public class Main2Activity extends AppCompatActivity {
 
 
-    EditText editText; // declaro EditText para poder escribir el sitio
+    EditText editText;
 
-    Button boton_ver_sitios; // Declaro el boton para ir al MainActivity y ver sitios
+    Button boton_ver_sitios;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,11 +31,8 @@ public class Main2Activity extends AppCompatActivity {
         editText = findViewById(R.id.edit_item);
 
 
-        boton_ver_sitios = findViewById(R.id.boton_ver_sitios);    // Le decimos a que id se refiere el boton1, en este caso es el boton
-        // con id boton_ir_añadir que se usa para ir al MAinActivity y ver la lista
+        boton_ver_sitios = findViewById(R.id.boton_ver_sitios);
 
-
-        //Ahora le decimos a este boton_ver_sitios  con intent que vaya al MainActivity para ver la lista con los sitios,
         boton_ver_sitios.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {

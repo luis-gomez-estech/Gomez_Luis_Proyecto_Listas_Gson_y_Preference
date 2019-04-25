@@ -5,8 +5,7 @@ public class Sitio { //Aqui le he borrado la palabra public
     //Creo la variable del atributo del sitio que guardamos
     private String sitio;
 
-    //private int zip;
-    //private int rooms;
+
 
     // Creamos constructor
     public Sitio(String sitio) {

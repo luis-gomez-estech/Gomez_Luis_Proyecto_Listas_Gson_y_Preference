@@ -34,15 +34,9 @@ public class SitiosAdaptador extends ArrayAdapter<Sitio> {
        // TextView name = convertView.findViewById(R.id.tv_name);
 
         Sitio item = getItem(position);
-        //User item = getItem(position);
-
-        //Glide.with(getContext()).load(item.getImage()).into(avatar);
 
         sitio.setText(item.getSitio());
-        //name.setText(item.getName());
 
-        //title.setText(item.getTitle());
-        //company.setText(item.getCompany());
 
         return convertView;
     }
